@@ -7,7 +7,7 @@ services:
     depends_on:
       - db
     ports:
-      - "8071:8069"
+      - "8069:8069"
     volumes:
       - odoo-web-data:/var/lib/odoo
       - ./project:/mnt/project
@@ -27,7 +27,7 @@ services:
       - POSTGRES_USER=odoo
       - PGDATA=/var/lib/postgresql/data/pgdata
     ports:
-      - "5434:5432"
+      - "5432:5432"
     volumes:
       - odoo-db-data:/var/lib/postgresql/data/pgdata
     restart: always
