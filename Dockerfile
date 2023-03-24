@@ -1,4 +1,4 @@
-FROM odoo:14.0
+FROM odoo:15.0
 
 LABEL MAINTAINER Anthony Loayza <rloayza1697@gmail.com>
 USER root
